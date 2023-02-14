@@ -1,1 +1,71 @@
+4.times do
+  sample :drum_cymbal_closed
+  sleep 0.5
+end
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_snare_hard
+  sample :drum_cymbal_closed
+  sleep 0.5
+end
+
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_bass_hard
+  sample :drum_snare_hard
+  sample :drum_bass_hard
+  sleep 0.5
+end
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_snare_hard
+  sample :drum_cymbal_closed
+  sleep 0.4
+end
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_bass_hard
+  sample :drum_snare_hard
+  sample :drum_bass_hard
+  sleep 0.4
+end
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_snare_hard
+  sample :drum_cymbal_closed
+  sleep 0.3
+end
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_bass_hard
+  sample :drum_snare_hard
+  sample :drum_bass_hard
+  sleep 0.3
+end
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_snare_hard
+  sample :drum_cymbal_closed
+  sleep 0.2
+end
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_bass_hard
+  sample :drum_snare_hard
+  sample :drum_bass_hard
+  sleep 0.2
+end
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_snare_hard
+  sample :drum_cymbal_closed
+  sleep 0.4
+end
+4.times do
+  sample :drum_tom_mid_hard
+  sample :drum_bass_hard
+  sample :drum_snare_hard
+  sample :drum_bass_hard
+  sleep 0.4
+end
 
