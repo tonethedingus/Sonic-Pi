@@ -1,1 +1,48 @@
+# Welcome to Sonic Pi
+use_bpm 200
+use_synth :piano
+use_synth_defaults amp:3
+
+
+live_loop :begin do
+  sample :ambi_lunar_land, amp:1
+  sleep 15
+end
+
+live_loop :heart do
+  play 1, beat_stretch: 3, amp: 1.5
+  sleep 0.4
+  play 1, amp: 2
+  sleep 2.2
+end
+
+live_loop :strange do
+  play :c4
+  sleep 0.5
+  play :e4
+  sleep 0.5
+  play :g4
+  sleep 0.5
+  play :b4
+  sleep 0.5
+  play :c5
+  sleep 0.5
+  play :b4
+  sleep 0.5
+  play :g4
+  sleep 0.5
+  play :e4
+  sleep 0.5
+  
+end
+
+live_loop :ahh do
+  sample :ambi_choir, beat_stretch: 7, amp: 3
+  sleep 10
+end
+
+live_loop :a do
+  sample :ambi_dark_woosh, beat_stretch: 12, amp: 5
+  sleep 25
+end
 
