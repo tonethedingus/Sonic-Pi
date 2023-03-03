@@ -1,1 +1,21 @@
+use_bpm 250
+use_synth :piano
+use_synth_defaults
 
+start=21
+after=108
+sleep=0.5
+
+live_loop:loop do
+  88.times do
+    play(start)
+    sleep(sleep)
+    start = start + 1
+  end
+  88.times do
+    play(after)
+    sleep(sleep)
+    after = after - 1
+  end
+  sleep = sleep /2
+end
