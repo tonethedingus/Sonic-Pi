@@ -61,30 +61,24 @@ end
 define:ding_3 do
   play :cs6, sustain: 1000, amp: 0.8
 end
-
+sleep 13
 
 live_loop :so do
-  bum_1
-  ding_1
-  bum_1
-  ding_1
-  bum_1
-  ding_1
+  3.times do
+    bum_1
+    ding_1
+  end
   bum_1
   play :e5, sustain: 1000, amp: 0.8
-  bum_1
-  ding_2
-  bum_1
-  ding_2
-  bum_1
-  ding_2
+  3.times do
+    bum_1
+    ding_2
+  end
   play :ds5, sustain: 1000, amp: 0.8
-  bum_1
-  ding_3
-  bum_1
-  ding_3
-  bum_1
-  ding_3
+  3.times do
+    bum_1
+    ding_3
+  end
   bum_1
   play :cs5, sustain: 1000, amp: 0.8
   bum_1
@@ -96,29 +90,33 @@ live_loop :so do
   bum_1
   play :es6, sustain: 1000, amp: 0.8
 end
-live_loop :apple do
-  sample :drum_snare_soft, amp: 0.5
-  sleep 4
-end
 live_loop :fortnite do
   4.times do
-    sample :bd_boom
+    sample :bd_boom,amp: 1.4
+    sample :bd_808
+    sample :drum_bass_soft,amp: 0.6
     sleep 4
   end
   sleep 4
   4.times do
-    sample :bd_boom
+    sample :bd_boom,amp: 1.4
+    sample :bd_808
+    sample :drum_bass_soft,amp: 0.6
     sleep 3
   end
   sleep 4
   ant= 1
   10.times do
-    sample :bd_boom
+    sample :bd_boom,amp: 1.4
+    sample :bd_808
+    sample :drum_bass_soft,amp: 0.6
     sleep 2
   end
   sleep 4
   20.times do
-    sample :bd_boom
+    sample :bd_boom,amp: 1.4
+    sample :bd_808
+    sample :drum_bass_soft,amp: 0.6
     sleep 1
   end
 end
