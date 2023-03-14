@@ -1,1 +1,16 @@
+use_bpm 120
+use_synth_defaults sustain: 0.25
 
+notes = [:e3,:e3,:g3,:e3,:r,:d3,:c3,:b2]
+slp = [1.5, 0.5, 0.75, 0.25, 0.5, 0.5, 2, 2]
+BBB = 0
+
+live_loop :white_stripes do
+  8.times do
+    play notes[BBB]
+    sleep slp[BBB]
+    BBB = BBB + 1
+    puts(BBB)
+  end
+  BBB = 0
+end
