@@ -1,1 +1,123 @@
+use_bpm 100
+use_synth :piano
+use_synth_defaults amp:3
+supabad = "C:/Users/Anthony Aceves/Downloads/supabad.wav"
+lil=[:cs5,:a5,:a5,:gs5]
+t=0
+define :one do |n1|
+  play n1, sustain: 10000
+  sleep 2
+end
+3.times do
+  one :es6
+end
+one :e5
+3.times do
+  one :ds6
+end
+one :ds5
+3.times do
+  one :cs6
+end
+4.times do
+  play lil[t]
+  sleep 2
+  t = t + 1
+end
+a=1
+5.times do
+  play :es6, sustain: 10000, amp:(a)
+  sleep 2
+  a=a -0.2
+end
 
+sample supabad, amp: 4
+
+
+use_bpm 250
+use_synth :piano
+use_synth_defaults amp:1
+
+define :bum_1 do
+  play :cs5, sustain: 1000
+  sleep 1
+  play :es5, sustain: 1000
+  sleep 1
+  play :gs5, sustain: 1000
+  sleep 1
+  play :es5, sustain: 1000
+  sleep 1
+end
+define :ding_1 do
+  play :es6, sustain: 1000, amp: 0.8
+end
+define :ding_2 do
+  play :ds6, sustain: 1000, amp: 0.8
+end
+define:ding_3 do
+  play :cs6, sustain: 1000, amp: 0.8
+end
+f1lthy= "C:/Users/Anthony Aceves/Downloads/F1LTHY.wav"
+
+sleep 13
+
+live_loop :so do
+  3.times do
+    bum_1
+    ding_1
+  end
+  bum_1
+  play :e5, sustain: 1000, amp: 0.8
+  3.times do
+    bum_1
+    ding_2
+  end
+  play :ds5, sustain: 1000, amp: 0.8
+  3.times do
+    bum_1
+    ding_3
+  end
+  bum_1
+  play :cs5, sustain: 1000, amp: 0.8
+  bum_1
+  play :as5, sustain: 1000, amp: 0.8
+  bum_1
+  play :as5, sustain: 1000, amp: 0.8
+  bum_1
+  play :gs5, sustain: 1000, amp: 0.8
+  bum_1
+  play :es6, sustain: 1000, amp: 0.8
+end
+sample f1lthy
+live_loop :fortnite do
+  4.times do
+    sample :bd_boom,amp: 1.4
+    sample :bd_808
+    sample :drum_bass_soft,amp: 0.6
+    sleep 4
+  end
+  
+  sleep 4
+  4.times do
+    sample :bd_boom,amp: 1.4
+    sample :bd_808
+    sample :drum_bass_soft,amp: 0.6
+    sleep 3
+  end
+  sleep 4
+  ant= 1
+  
+  10.times do
+    sample :bd_boom,amp: 1.4
+    sample :bd_808
+    sample :drum_bass_soft,amp: 0.6
+    sleep 2
+  end
+  sleep 4
+  20.times do
+    sample :bd_boom,amp: 1.4
+    sample :bd_808
+    sample :drum_bass_soft,amp: 0.6
+    sleep 1
+  end
+end
