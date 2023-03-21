@@ -1,1 +1,53 @@
+=begin
 
+Functions are great for when the pattern of notes (sleeps) and the actual notes are exactly the same.
+
+Parameterised functions are great for when the pattern of notes is the same but the actual notes are different.
+
+YOUR TASK: Use a parameterised function to optimize the code below.
+
+=end
+use_bpm 120
+use_synth :chiplead
+
+define :eat do |n1,n2|
+  play n1
+  play n2
+  sleep 0.5
+end
+# MEASURE 1 ---------------------------
+eat :a4, :a5
+eat :a4, :a5
+eat :c5, :c6
+eat :a4, :a5
+eat :d5, :d6
+eat :a4, :a5
+eat :e5, :e6
+eat :d5, :d6
+# MEASURE 2 ---------------------------
+eat :c5, :c6
+eat :c5, :c6
+eat :e5, :e6
+eat :c5, :c6
+eat :g5, :g6
+eat :c5, :c6
+eat :e5, :e6
+eat :c4, :c5
+# MEASURE 3 ---------------------------
+eat :g4, :g5
+eat :g4, :g5
+eat :b4, :b5
+eat :g4, :g5
+eat :c5, :c6
+eat :g4, :g5
+eat :d5, :d6
+eat :d5, :d6
+# MEASURE 4 ---------------------------
+eat :f4, :f5
+eat :f4, :f5
+eat :a4, :a5
+eat :f4, :f5
+eat :c5, :c6
+eat :f4, :f5
+eat :c5, :c6
+eat :b4, :b5
