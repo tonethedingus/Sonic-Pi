@@ -1,1 +1,61 @@
+use_bpm 55
+use_synth :piano
+use_synth_defaults amp:1
+define :s do
+  sleep 0.4
+end
+c=0
+moo=[:b2, :fs3, :bs3, :c3, :g3, :e4, :a2, :e3, :b2, :fs3, :bs3, :c3, :g3, :e4, :a2, :e3]
+2.times do
+  play:g4
+  sleep 0.04
+  play:b4
+  sleep 0.04
+  play:f5
+  play:e2
+  s
+  play:b2
+  s
+  play:es3
+  s
+  play:gs3
+  s
+  play:es3
+  s
+  play:b2
+  8.times do
+    play moo[c]
+    s
+    c = c + 1
+  end
+  play :e4
+  s
+  play :b2
+  play :g4
+  sleep 0.04
+  play :e4
+  sleep 0.04
+  play :e5
+  s
+  play :e4
+  sleep 0.04
+  play :e5
+  sleep 0.04
+  play :c6
+  s
+  play :f3
+  s
+  play :b3
+end
+play :e3
+play:g4
+sleep 0.04
+play:b4
+sleep 0.04
+play:f5
+s
+play :b3
+
+
+
 
