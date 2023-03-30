@@ -61,63 +61,83 @@ f1lthy= "C:/Users/Anthony Aceves/Downloads/F1LTHY.wav"
 
 sleep 13
 
-live_loop :so do
-  3.times do
-    bum_1
-    ding_1
-  end
-  bum_1
-  play :e5, sustain: 1000, amp: 0.8
-  3.times do
-    bum_1
-    ding_2
-  end
-  play :ds5, sustain: 1000, amp: 0.8
-  3.times do
-    bum_1
-    ding_3
-  end
-  bum_1
-  play :cs5, sustain: 1000, amp: 0.8
-  bum_1
-  play :as5, sustain: 1000, amp: 0.8
-  bum_1
-  play :as5, sustain: 1000, amp: 0.8
-  bum_1
-  play :gs5, sustain: 1000, amp: 0.8
-  bum_1
-  play :es6, sustain: 1000, amp: 0.8
-end
 sample f1lthy
 live_loop :fortnite do
   4.times do
-    sample :bd_boom,amp: 1.4
-    sample :bd_808
-    sample :drum_bass_soft,amp: 0.6
+    sample :bd_boom,amp: 1.5
+    sample :bd_808, amp: 1.5
+    sample :drum_bass_soft,amp: 1.5
     sleep 4
   end
   
   sleep 4
   4.times do
-    sample :bd_boom,amp: 1.4
-    sample :bd_808
-    sample :drum_bass_soft,amp: 0.6
+    sample :bd_boom,amp: 1.5
+    sample :bd_808, amp: 1.5
+    sample :drum_bass_soft,amp: 1.5
     sleep 3
   end
   sleep 4
   ant= 1
   
   10.times do
-    sample :bd_boom,amp: 1.4
-    sample :bd_808
-    sample :drum_bass_soft,amp: 0.6
+    sample :bd_boom,amp: 1.5
+    sample :bd_808, amp: 1.5
+    sample :drum_bass_soft,amp: 1.5
     sleep 2
   end
   sleep 4
-  20.times do
-    sample :bd_boom,amp: 1.4
-    sample :bd_808
-    sample :drum_bass_soft,amp: 0.6
-    sleep 1
-  end
+  stop
 end
+
+3.times do
+  bum_1
+  ding_1
+end
+bum_1
+play :e5, sustain: 1000, amp: 0.8
+3.times do
+  bum_1
+  ding_2
+end
+play :ds5, sustain: 1000, amp: 0.8
+3.times do
+  bum_1
+  ding_3
+end
+bum_1
+play :cs5, sustain: 1000, amp: 0.8
+bum_1
+play :as5, sustain: 1000, amp: 0.8
+bum_1
+play :as5, sustain: 1000, amp: 0.8
+bum_1
+play :gs5, sustain: 1000, amp: 0.8
+bum_1
+play :es6, sustain: 1000, amp: 0.8
+
+
+r=1.5
+20.times do
+  sample :bd_boom, amp:(r)
+  sample :bd_808, amp:(r)
+  sample :drum_bass_soft, amp:(r)
+  sleep 1
+  r = r -0.06
+end
+j=1
+29.times do
+  sample :bd_boom, amp: 0.36
+  sample :bd_808, amp: 0.36
+  sample :drum_bass_soft, amp: 0.36
+  sleep (j)
+  j = j + 0.05
+end
+10.times do
+  sample :bd_boom, amp: 0.36
+  sample :bd_808, amp: 0.36
+  sample :drum_bass_soft, amp: 0.36
+  sleep 2.45
+end
+
+
