@@ -55,7 +55,38 @@ sleep 0.04
 play:f5
 s
 play :b3
-
-
-
-
+s
+play :g4
+s
+play :g4
+s
+play :b3
+play :d5
+s
+play :e3
+play :b4
+s
+play :e3
+play :g4
+sleep 0.04
+play :b4
+sleep 0.04
+play :d5
+s
+play :b3
+s
+play :g4
+play :g4
+play :b4
+play :d5
+s
+play :b4
+s
+play :b4
+sleep 0.04
+play :d5
+sleep 0.04
+play :d6
+s
+play :c6
+s
