@@ -139,5 +139,203 @@ end
   sample :drum_bass_soft, amp: 0.36
   sleep 2.45
 end
+sample :drum_bass_soft
+sample :drum_bass_soft
+use_bpm 55
+use_synth :piano
+use_synth_defaults amp:1
+define :s do
+  sleep 0.4
+end
+f=1
+smr = "C:/Users/Anthony Aceves/Downloads/Summers Over Interlude - EXTENDED CUT (1).wav"
 
+c=0
+moo=[:b2, :fs3, :bs3, :c3, :g3, :e4, :a2, :e3, :b2, :fs3, :bs3, :c3, :g3, :e4, :a2, :e3]
+sample :drum_bass_soft
+sample :bd_boom
+sample :bd_808
+play:g4
+sleep 1
+play:b4
+sleep 1
+play:f5
+play:e2
+sleep 1
+sample :drum_bass_soft
+sample :bd_boom
+sample :bd_808
+play:g4
+sleep 1
+play:b4
+sleep 1
+play:f5
+play:e2
+sleep 1
+sample :drum_bass_soft
+sample :bd_boom
+sample :bd_808
+play:g4
+sleep 1
+play:b4
+sleep 1
+play:f5
+play:e2
+sleep 1
+play:g4
+sleep 1
+play:b4
+sleep 1
+play:f5
+play:e2
+5.times do
+  play:g4
+  sleep (f)
+  play:b4
+  sleep (f)
+  play:f5
+  play:e2
+  f = f - 0.13
+end
+sleep 0.4364
+play:g4
+sleep 0.04
+play:b4
+sleep 0.4
+play:g4
+sleep 0.04
+play:b4
+sleep 0.4
+play:g4
+sleep 0.04
+play:b4
+sleep 0.4
+2.times do
+  play:g4
+  sleep 0.04
+  play:b4
+  sleep 0.04
+  play:f5
+  play:e2
+  s
+  play:b2
+  s
+  play:es3
+  s
+  play:gs3
+  s
+  play:es3
+  s
+  play:b2
+  8.times do
+    play moo[c]
+    s
+    c = c + 1
+  end
+  play :e4
+  s
+  play :b2
+  play :g4
+  sleep 0.04
+  play :e4
+  sleep 0.04
+  play :e5
+  s
+  play :e4
+  sleep 0.04
+  play :e5
+  sleep 0.04
+  play :c6
+  s
+  play :f3
+  s
+  play :b3
+end
+play :e3
+play:g4
+sleep 0.04
+play:b4
+sleep 0.04
+play:f5
+s
+play :b3
+s
+play :g4
+s
+play :g4
+s
+play :b3
+play :ds5
+s
+play :e3
+play :b4
+s
+play :e3
+play :g4
+sleep 0.04
+play :b4
+sleep 0.04
+play :d5
+s
+play :b3
+s
+play :g4
+play :g4
+play :b4
+play :ds5
+s
+play :b4
+s
+play :b4
+sleep 0.04
+play :d5
+sleep 0.04
+play :d6
+s
+play :cs6
+s
+play :g4
+play :c6
+s
+play :b3
+play :g5
+s
+play :b2
+play :b4
+sleep 0.04
+play :d5
+sleep 0.04
+play :d6
+s
+play :f3
+s
+play :g5
+s
+play :c5
+play :e5
+play :g5
+play :c3
+s
+play :g3
+s
+play :e4
+s
+play :c5
+play :e5
+play :g5
+play :a2
+s
+play :e3
+s
+play :e4
+s
+play :e4
+play :c3
+s
+play :f4
+play :d3
+s
+play :e4
+play :c3
+sample smr
 
