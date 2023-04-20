@@ -350,5 +350,5 @@ loo :e4
 13.times do
   play :c3, amp:(g)
   s
-  g=g - 0.07
+  g=g - 0.06
 end
