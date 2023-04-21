@@ -4,8 +4,6 @@ use_synth_defaults amp:2
 supabad = "C:/Users/Anthony Aceves/Downloads/supabad.wav"
 lil=[:cs5,:a5,:a5,:gs5]
 t=0
-
-
 define :one do |n1|
   play n1, sustain: 10000
   sleep 2
@@ -33,14 +31,10 @@ a=1
   sleep 2
   a=a -0.2
 end
-
 sample supabad, amp: 4
-
-
 use_bpm 250
 use_synth :piano
 use_synth_defaults amp:1
-
 define :bum_1 do
   play :cs5, sustain: 1000
   sleep 1
@@ -62,11 +56,8 @@ define:ding_3 do
 end
 f1lthy= "C:/Users/Anthony Aceves/Downloads/F1LTHY.wav"
 nuke = "C:/Users/Anthony Aceves/Downloads/Legalize nuclear bombs sound effect.wav"
-
 sleep 13
-
 sample f1lthy
-
 live_loop :fortnite do
   4.times do
     sample :bd_boom,amp: 1.5
@@ -84,7 +75,6 @@ live_loop :fortnite do
   end
   sleep 4
   ant= 1
-  
   10.times do
     sample :bd_boom,amp: 1.5
     sample :bd_808, amp: 1.5
@@ -94,7 +84,6 @@ live_loop :fortnite do
   sleep 4
   stop
 end
-
 3.times do
   bum_1
   ding_1
@@ -120,8 +109,6 @@ bum_1
 play :gs5, sustain: 1000, amp: 0.8
 bum_1
 play :es6, sustain: 1000, amp: 0.8
-
-
 r=1.5
 20.times do
   sample :bd_boom, amp:(r)
@@ -169,7 +156,6 @@ define :loo do |z|
   s
   play z
 end
-
 c=0
 g=1
 define :ss do
@@ -236,7 +222,6 @@ s
 play:es3
 s
 play:b2
-
 8.times do
   play moo[c]
   s
@@ -266,7 +251,6 @@ sample smr
   play :f3
   s
   play :b3
-  
   play :e3
   play:g4
   ss
@@ -343,12 +327,10 @@ sample smr
   s
   play :e4
   s
-  
 end
-
-loo :e4
+loo :e4  #Par
 13.times do
   play :c3, amp:(g)
   s
-  g=g - 0.06
+  g=g - 0.055
 end
